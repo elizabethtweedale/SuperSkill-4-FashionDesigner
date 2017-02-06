@@ -5,10 +5,12 @@ from random import randint          # import randint from the random module
 
 designer = Turtle()                 # declare your Turtle as designer
 designer.penup()                    # lift up the pen in order to move it to the correct place
+designer.hideturtle()               # hide the turtle drawing arrow
 designer.goto(-330,330)             # send the designer to the top left corner
 
 r, g, b = 0, 0, 0                   # creaet 3 numbers r, g, b to create colors
 colormode(255)                      # set the color mode to 255
+                                    # speed(0)
 
 def chooseColor():                  # this function will choose a random color
     global r,g,b                
